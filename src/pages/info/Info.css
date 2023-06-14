@@ -18,6 +18,9 @@
   flex-direction: column;
 }
 .info label{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: .8rem;
   margin-bottom: 10px;
   color: hsl(213, 96%, 18%);
@@ -52,18 +55,10 @@
 
 
 /*Message ERROR*/
+
 .errorMessage-name, .errorMessage-email, .errorMessage-phone{
-  position: absolute;
-  right: 50px;
   color: red;
   font-size: .7rem;
-}
-.errorMessage-name{
-  top: 147px;
-}
-.errorMessage-email{
-  top: 235px;
-}
-.errorMessage-phone{
-  bottom: 220px;
+  margin-right: 10px;
+  font-weight: 400;
 }

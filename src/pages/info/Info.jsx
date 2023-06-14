@@ -39,8 +39,10 @@ const Info = () => {
         <h2>Personal info</h2>
         <p>Please provide your name, email address and phone number.</p>
         <form action="" onSubmit={handleSubmit}>
-          <label htmlFor="name">Name</label>
-          {name === '' && <span className='errorMessage-name'>{errorMessage}</span>}
+          <label htmlFor="name">
+            Name 
+            {name === '' && <span className='errorMessage-name'>{errorMessage}</span>}
+          </label>
           <input
             type="text" 
             id='name' 
@@ -51,8 +53,10 @@ const Info = () => {
             style={{border: errorMessage && name === '' ? '1px solid red' : '1px solid hsl(229, 24%, 87%)'}}
           />
           
-          <label htmlFor="email">Email Address</label>
-          {email === '' && <span className='errorMessage-email'>{errorMessage}</span>}
+          <label htmlFor="email">
+            Email Address
+            {email === '' && <span className='errorMessage-email'>{errorMessage}</span>}
+          </label>
           <input 
             type="email" 
             name='email' 
@@ -62,8 +66,10 @@ const Info = () => {
             onChange={(e) => setEmail(e.target.value)} 
             style={{border: errorMessage && email === '' ? '1px solid red' : '1px solid hsl(229, 24%, 87%)'}}
           />
-          <label htmlFor="phone">Phone Number</label>
-          {phoneNumber === '' && <span className='errorMessage-phone'>{errorMessage}</span>}
+          <label htmlFor="phone">
+            Phone Number
+            {phoneNumber === '' && <span className='errorMessage-phone'>{errorMessage}</span>}
+          </label>
           <input 
             type="number" 
             name='phone' 
