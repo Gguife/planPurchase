@@ -5,7 +5,7 @@ const Menu = () => {
   return (
     <div className='menu'>
       <div className="menu-content">
-        <DisableNav exact to='/' className='menu-numberPage' activeClassName='active'>
+        <DisableNav exact='true' to='/' className='menu-numberPage' activeclassname='active'>
             <p>1</p>
         </DisableNav>
         <div className="menu-descPage">
@@ -14,7 +14,7 @@ const Menu = () => {
         </div>
       </div>
       <div className="menu-content">
-        <DisableNav exact to='/plan' className='menu-numberPage' activeClassName='active'>
+        <DisableNav exact='true' to='/plan' className='menu-numberPage' activeclassname='active'>
             <p>2</p>
         </DisableNav>
         <div className="menu-descPage">
@@ -23,7 +23,7 @@ const Menu = () => {
         </div>
       </div>
       <div className="menu-content">
-        <DisableNav exact to='/addons' className='menu-numberPage' activeClassName='active'>
+        <DisableNav exact='true' to='/addons' className='menu-numberPage' activeclassname='active'>
             <p>3</p>
         </DisableNav>
         <div className="menu-descPage">
@@ -32,7 +32,7 @@ const Menu = () => {
         </div>
       </div>
       <div className="menu-content">
-        <DisableNav exact to='/summary' className='menu-numberPage' activeClassName='active'>
+        <DisableNav exact='true' to='/summary' className='menu-numberPage' activeclassname='active'>
             <p>4</p>
         </DisableNav>
         <div className="menu-descPage">
