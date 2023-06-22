@@ -1,12 +1,15 @@
-import './Plan.css'
-import { Link } from 'react-router-dom'
+import './Plan.css';
+import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 //Imagens
-import Arcade from '../../assets/icon-arcade.svg'
-import Advanced from '../../assets/icon-advanced.svg'
-import Pro from '../../assets/icon-pro.svg'
+import Arcade from '../../assets/icon-arcade.svg';
+import Advanced from '../../assets/icon-advanced.svg';
+import Pro from '../../assets/icon-pro.svg';
 
 const Plan = () => {
+  const [ MonthFree ,setMonthFree ] = useState('');
+  
   return (
     <div className='plan'>
       <h2>Seleect your plan</h2>
@@ -34,7 +37,7 @@ const Plan = () => {
       <div className="plan-card-button">
         <p>Monthly</p>
         <label class="switch">
-          <input type="checkbox" />
+          <input type="checkbox" id='slider' />
           <span class="slider"></span>
         </label>
         <p>Yearly</p>
