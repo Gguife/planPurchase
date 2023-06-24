@@ -1,7 +1,16 @@
-import './Menu.css'
-import DisableNav  from '../disableNavLink/DisableNavLink'
+import './Menu.css';
+import DisableNav  from '../disableNavLink/DisableNavLink';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Menu = () => {
+  const location = useLocation();
+  const [showPlan, setShowPlan] = useState(false);
+
+  useEffect(()=>{
+    setShowPlan(location.pathname === '/planyear')
+  },[location])
+
   return (
     <div className='menu'>
       <div className="menu-content">
@@ -13,15 +22,24 @@ const Menu = () => {
           <p>Your Info</p>
         </div>
       </div>
+      
       <div className="menu-content">
-        <DisableNav exact='true' to='/plan' className='menu-numberPage' activeclassname='active'>
+        {!showPlan &&
+          <DisableNav exact='true' to='/plan' className='menu-numberPage' activeclassname='active'>
             <p>2</p>
-        </DisableNav>
+          </DisableNav>
+        }
+        {showPlan &&
+          <DisableNav exact='true' to='/planyear' className='menu-numberPage' activeclassname='active'>
+            <p>2</p>
+          </DisableNav>
+        }
         <div className="menu-descPage">
           <h3>STEP 2</h3>
           <p>Select Plan</p>
         </div>
       </div>
+      
       <div className="menu-content">
         <DisableNav exact='true' to='/addons' className='menu-numberPage' activeclassname='active'>
             <p>3</p>
