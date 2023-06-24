@@ -1,0 +1,8 @@
+.plan-card span{
+  color:  hsl(213, 96%, 18%);
+  position: absolute;
+  bottom: 10px;
+}
+.year{
+  height: 200px;
+}
