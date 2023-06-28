@@ -6,9 +6,13 @@ import { useLocation } from 'react-router-dom';
 const Menu = () => {
   const location = useLocation();
   const [showPlan, setShowPlan] = useState(false);
+  const [showAddons, setShowAddons] = useState(false);
+  const [showSummary, setShowSummary] = useState(false);
 
   useEffect(()=>{
-    setShowPlan(location.pathname === '/planyear')
+    setShowPlan(location.pathname === '/planyear');
+    setShowAddons(location.pathname === '/addonsyear');
+    setShowSummary(location.pathname === '/summaryear');
   },[location])
 
   return (
@@ -41,18 +45,33 @@ const Menu = () => {
       </div>
       
       <div className="menu-content">
-        <DisableNav exact='true' to='/addons' className='menu-numberPage' activeclassname='active'>
+      {!showAddons &&
+          <DisableNav exact='true' to='/addons' className='menu-numberPage' activeclassname='active'>
             <p>3</p>
-        </DisableNav>
+          </DisableNav>
+        }
+        {showAddons &&
+          <DisableNav exact='true' to='/addonsyear' className='menu-numberPage' activeclassname='active'>
+            <p>3</p>
+          </DisableNav>
+        }
         <div className="menu-descPage">
           <h3>STEP 3</h3>
           <p>Add-ONS</p>
         </div>
       </div>
+
       <div className="menu-content">
-        <DisableNav exact='true' to='/summary' className='menu-numberPage' activeclassname='active'>
+      {!showSummary &&
+          <DisableNav exact='true' to='/summary' className='menu-numberPage' activeclassname='active'>
             <p>4</p>
-        </DisableNav>
+          </DisableNav>
+        }
+        {showSummary &&
+          <DisableNav exact='true' to='/summaryear' className='menu-numberPage' activeclassname='active'>
+            <p>4</p>
+          </DisableNav>
+        }
         <div className="menu-descPage">
           <h3>STEP 4</h3>
           <p>Summary</p>
@@ -62,4 +81,4 @@ const Menu = () => {
   )
 }
 
-export default Menu
+export default Menu;
