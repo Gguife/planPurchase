@@ -34,8 +34,8 @@ const PlanYear = () => {
     setSelectCard3(cardIndex === 3);
   }
 
-  const navigateSummaryYear = () =>{
-    navigate('/summaryear')
+  const navigateAddOnsYear = () =>{
+    navigate('/addonsyear')
   }
 
 
@@ -81,7 +81,7 @@ const PlanYear = () => {
 
       <div className="plan-routes">
         <Link to='/'>Go back</Link>
-        <button onClick={navigateSummaryYear}>Next</button>
+        <button onClick={navigateAddOnsYear}>Next</button>
       </div>
     </div>
   )

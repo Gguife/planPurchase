@@ -32,8 +32,8 @@ const Plan = () => {
   }
 
   //Button next page
-  const navigateToSummary = () =>{
-    navigate('/summary')
+  const navigateToAddons = () =>{
+    navigate('/addons')
   }
 
   return (
@@ -74,7 +74,7 @@ const Plan = () => {
 
       <div className="plan-routes">
         <Link to='/'>Go back</Link>
-        <button onClick={navigateToSummary}>Next</button>
+        <button onClick={navigateToAddons}>Next</button>
       </div>
     </div>
   )
