@@ -1,11 +1,10 @@
-import './AddOns.css';
-import { Link, useNavigate } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 
-const AddOns = () => {
+const AddOnsYear = () => {
   const navigate = useNavigate();
 
-  const navigateToSummary = () =>{
-    navigate('/summary');
+  const navigateToSummaryYear = () =>{
+    navigate('/summaryear');
   }
 
   return (
@@ -19,7 +18,7 @@ const AddOns = () => {
             <h3>Online service</h3>
             <p>Access to multiplayer games</p>
           </div>
-          <span>+$1/mo</span>
+          <span>+$10/yr</span>
         </div>
 
         <div className="addons-card">
@@ -28,7 +27,7 @@ const AddOns = () => {
             <h3>Larger storage</h3>
             <p>Extra 1TB of cloud save</p>
           </div>
-          <span>+$2/mo</span>
+          <span>+$20/yr</span>
         </div>
 
         <div className="addons-card">
@@ -37,16 +36,16 @@ const AddOns = () => {
             <h3>Customizable Profile</h3>
             <p>Custom theme on your profile</p>
           </div>
-          <span>+$2/mo</span>
+          <span>+$20/yr</span>
         </div>
       </div>
 
       <div className="addons-navigate">
         <Link to='/plan'>Go back</Link>
-        <button onClick={navigateToSummary}>Next Step</button>
+        <button onClick={navigateToSummaryYear}>Next Step</button>
       </div>
     </div>
   )
 }
 
-export default AddOns;
+export default AddOnsYear
