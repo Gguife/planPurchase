@@ -7,7 +7,8 @@ import PlanYear from '../pages/plan/plaYear/PlanYear';
 import AddOns from '../pages/addOns/AddOns';
 import Summary from '../pages/summary/Summary';
 import SummaryYear from '../pages/summary/summaryYear/SummaryYear';
-import AddOnsYear from '../pages/addOns/addOnsYear/AddOnsYear'
+import AddOnsYear from '../pages/addOns/addOnsYear/AddOnsYear';
+import Complete from '../pages/complete/Complete';
 
 const MainRouter = () => {
   const router = useRoutes([
@@ -18,6 +19,7 @@ const MainRouter = () => {
     {path:'/addonsyear', element: <AddOnsYear />},
     {path:'/summary', element: <Summary />},
     {path:'/summaryear', element: <SummaryYear />},
+    {path: '/complete', element: <Complete />}
   ])
 
   return router;
