@@ -1,0 +1,20 @@
+.complete{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 700px;
+}
+.complete img{
+  margin-bottom: 10px;
+}
+.complete h1{
+  color: hsl(213, 96%, 18%);
+  margin: 20px;
+}
+.complete p{
+  max-width: 450px;
+  text-align: center;
+  color: hsl(231, 11%, 63%);
+}
