@@ -2,20 +2,20 @@
 <p align="center">Projeto simulação de compra de planos</p>
 
 
-<h3>O que o site proporciona?</h3>
 
-- [x] Site totalmente intuitivo
-- [x] Secção de cadastro
-- [x] Escolha entre plano Month ou Year (preço e ofertas diferentes em cada pacote de plano)
+### ✒️ Sobre
+Desenvolvimento de uma plataforma de compra de planos, com opções mensais e anuais para facilitar sua escolha. Navegação aprimorada para uma experiência de usuário mais intuitiva e agradável na seleção do plano ideal para suas necessidades.
 
 <hr>
 <h1 align="center">
   <img alt="NextLevelWeek" title="#NextLevelWeek" src="./src/assets/plan.png" width='90%' />
 </h1>
 
-### ✒️ Sobre
-Desenvolvimento de uma plataforma de compra de planos, com opções mensais e anuais para facilitar sua escolha. Navegação aprimorada para uma experiência de usuário mais intuitiva e agradável na seleção do plano ideal para suas necessidades.
+<h3>O que o site proporciona?</h3>
 
+- [x] Site totalmente intuitivo
+- [x] Secção de cadastro
+- [x] Escolha entre plano Month ou Year (preço e ofertas diferentes em cada pacote de plano)
 ### 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
