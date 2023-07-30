@@ -13,6 +13,9 @@
   <img alt="NextLevelWeek" title="#NextLevelWeek" src="./src/assets/plan.png" width='90%' />
 </h1>
 
+### ✒️ Sobre
+Desenvolvimento de uma plataforma de compra de planos, com opções mensais e anuais para facilitar sua escolha. Navegação aprimorada para uma experiência de usuário mais intuitiva e agradável na seleção do plano ideal para suas necessidades.
+
 ### 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
